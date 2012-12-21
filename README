@@ -1,0 +1,27 @@
+NAME
+    Tie::Handle::FileRotate - Filehandle tie to write to autorotated file
+    with File::Write::Rotate
+
+VERSION
+    version 0.01
+
+SYNOPSIS
+     use Tie::Handle::FileRotate;
+     tie *FH, 'Tie::Handle::FileRotate',
+         dir=>'/some/dir', prefix=>'myapp', size=>25*1024*1024, histories=>5;
+     print FH "Logging a line\n";
+     print FH "Logging another line\n";
+
+DESCRIPTION
+SEE ALSO
+    File::Write::Rotate
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2012 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
